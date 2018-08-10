@@ -35,7 +35,7 @@ export class TakeInterviewComponent implements OnInit {
   showResume(e, candidate) {
     e.preventDefault;
     this.candidate = candidate;
-    this.resumeData=`http://localhost:8181/api/interview/candidate/${this.candidate['candidateId']}`;
+    this.resumeData=`https://justhire-wissen.herokuapp.com/api/interview/candidate/${this.candidate['candidateId']}`;
    
     this.displayDialog = true;
   }

@@ -17,7 +17,7 @@ export class TopnavbarComponent implements OnInit {
   }
   toggleNavigation(): void {
     
-    // jQuery("body").toggleClass("mini-navbar");
+    // jQuery("body").toggleClass("navbar");
     smoothlyMenu();
 }
 logout() {

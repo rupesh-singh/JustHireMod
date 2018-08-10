@@ -17,7 +17,7 @@ export class AuthenticationService {
   authenticateUser(user) {
     console.log('also working');
     console.log(user);
-    return this.http.post('http://localhost:8181/api/login', user, {
+    return this.http.post('https://justhire-wissen.herokuapp.com/api/login', user, {
       headers: new HttpHeaders().set('content-type', 'application/json'),
     });
   }
@@ -61,7 +61,7 @@ export class AuthenticationService {
   }
 
   updatePassword(id,form){
-    let url=`http://localhost:8181/api/login/changePassword/`;
+    let url=`https://justhire-wissen.herokuapp.com/api/login/changePassword/`;
     return this.http.put(url+`${id}`, form);
   }
 

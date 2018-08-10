@@ -12,7 +12,7 @@ export class UploadFileService {
 
     formdata.append('file', file);
 
-    const req = new HttpRequest('POST', 'http://localhost:8181/api/question/bank', formdata, {
+    const req = new HttpRequest('POST', 'https://justhire-wissen.herokuapp.com/api/question/bank', formdata, {
       reportProgress: true,
       responseType: 'text'
     });
@@ -21,6 +21,6 @@ export class UploadFileService {
   }
 
   getFiles(): Observable<string[]> {
-    return this.http.get<string[]>('http://localhost:8181/api/question/bank');
+    return this.http.get<string[]>('https://justhire-wissen.herokuapp.com/api/question/bank');
   }
 }

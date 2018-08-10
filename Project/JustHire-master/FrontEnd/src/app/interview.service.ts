@@ -10,7 +10,7 @@ export class InterviewService {
   minimunQuestionsCount: Number;
   currentQuestionCount = parseInt(JSON.parse(localStorage.getItem('currentQuestionCount'))) ;
   //round not getting inititalized everytime
-  apiURL = 'http://localhost:8181/api/interview';
+  apiURL = 'https://justhire-wissen.herokuapp.com/api/interview';
 
   constructor(private http: HttpClient,
     private router: Router) {
@@ -30,7 +30,7 @@ export class InterviewService {
   }
 
   getRoundCount(){
-    return this.http.get('http://localhost:8181/api/admin/roundcount');
+    return this.http.get('https://justhire-wissen.herokuapp.com/api/admin/roundcount');
   }
 
   setMinimumQuestionThreshold(min) {
@@ -69,7 +69,7 @@ export class InterviewService {
   }
 
 getUserRoundCount(){
-  return this.http.get('http://localhost:8181/api/admin/user/distinct-round');
+  return this.http.get('https://justhire-wissen.herokuapp.com/api/admin/user/distinct-round');
 }
 
   getFirstQuestion(candidate) {

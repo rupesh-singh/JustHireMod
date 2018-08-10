@@ -9,7 +9,7 @@ export class CandidateService {
 
   constructor(private http: HttpClient) { }
 
-  apiUrl: string = "http://localhost:8181/api";
+  apiUrl: string = "https://justhire-wissen.herokuapp.com/api";
 
   loadPendingCandidates(roundId) {
     return this.http.get(this.apiUrl + `/interview/candidate/pending/${roundId}`);
@@ -40,7 +40,7 @@ export class CandidateService {
   }
 
   viewCandidateResume(candidate): any {
-    return this.http.get(`http://localhost:8181/api/interview/candidate/${candidate}`)
+    return this.http.get(`https://justhire-wissen.herokuapp.com/api/interview/candidate/${candidate}`)
     
   }
 
@@ -50,7 +50,7 @@ export class CandidateService {
   }
 
   getReport(candidateId) {
-    return this.http.get(`http://localhost:8181/api/interview/report/${candidateId}`);
+    return this.http.get(`https://justhire-wissen.herokuapp.com/api/interview/report/${candidateId}`);
   }
 
 }

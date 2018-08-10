@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class StatsService {
 
-  apiUrl: string = 'http://localhost:8181/api/admin/stats';
+  apiUrl: string = 'https://justhire-wissen.herokuapp.com/api/admin/stats';
 
   constructor(private http: HttpClient) { }
 
@@ -15,11 +15,11 @@ export class StatsService {
   }
 
   loadRounds(){
-    let url=`http://localhost:8181/api/admin/rounds`;
+    let url=`https://justhire-wissen.herokuapp.com/api/admin/rounds`;
     return this.http.get(url);
   }
 
   setAttributes(systemForm) {
-    return this.http.post('http://localhost:8181/api/admin/attribute', systemForm);
+    return this.http.post('https://justhire-wissen.herokuapp.com/api/admin/attribute', systemForm);
   }
 }

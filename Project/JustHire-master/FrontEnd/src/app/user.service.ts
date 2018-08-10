@@ -8,27 +8,27 @@ export class UserService {
 
   constructor(private http: HttpClient) { }
 
-  apiUrl="http://localhost:8181/api/admin/user";
+  apiUrl="https://justhire-wissen.herokuapp.com/api/admin/user";
 
   loadUser(){
     return this.http.get(this.apiUrl);
   }
 
   loadUserById(id) {
-    let url=`http://localhost:8181/api/admin/editUser/`;
+    let url=`https://justhire-wissen.herokuapp.com/api/admin/editUser/`;
     return this.http.get(url + `${id}`);
   }
 
   getRounds(){
-    return this.http.get("http://localhost:8181/api/admin/rounds");
+    return this.http.get("https://justhire-wissen.herokuapp.com/api/admin/rounds");
   }
 
   addUser(userForm){
-    return this.http.post("http://localhost:8181/api/admin/user",userForm);
+    return this.http.post("https://justhire-wissen.herokuapp.com/api/admin/user",userForm);
   }
 
   update(id,user){
-    let url = `http://localhost:8181/api/admin/editUser/`;
+    let url = `https://justhire-wissen.herokuapp.com/api/admin/editUser/`;
     return this.http.put(url+`${id}`, user);
   }
 }

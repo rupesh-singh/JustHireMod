@@ -1,0 +1,13 @@
+Front end hosted :
+Link:
+https://justhire-f934a.firebaseapp.com
+
+
+Backend Hosted {QuestionBank + Resume Not Working }
+Link:
+https://justhire-wissen.herokuapp.com/
+
+Mobile app Using Cordova 
+
+Instruction for Mobile app and Deploy in respective folder
+
