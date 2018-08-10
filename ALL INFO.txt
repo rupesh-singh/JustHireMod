@@ -1,5 +1,6 @@
 Front end hosted :
 	Link: https://justhire-f934a.firebaseapp.com
+	Login into FireBase (Steps available)
 
 
 Backend Hosted {QuestionBank + Resume Not Working }
