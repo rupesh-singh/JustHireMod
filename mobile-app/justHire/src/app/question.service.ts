@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class QuestionService {
 
-  apiUrl: string = "http://localhost:8181/api/question";
+  apiUrl: string = "https://justhire-wissen.herokuapp.com/api/question";
 
   constructor(private http: HttpClient) { }
 
@@ -27,17 +27,17 @@ deleteQuestion(questionId){
 }
 
   submit(question) {
-    let url = `http://localhost:8181/api/question/${question.questionId}`;
+    let url = `https://justhire-wissen.herokuapp.com/api/question/${question.questionId}`;
     return this.http.put(url, question);
   }
 
   submitNewQuestion(question) {
-    let url = `http://localhost:8181/api/question`;
+    let url = `https://justhire-wissen.herokuapp.com/api/question`;
     return this.http.post(url, question);
   }
 
   update(id,question){
-    let url="http://localhost:8181/api/question/edit/";
+    let url="https://justhire-wissen.herokuapp.com/api/question/edit/";
     return this.http.put(url+`${id}`, question);
   }
 }

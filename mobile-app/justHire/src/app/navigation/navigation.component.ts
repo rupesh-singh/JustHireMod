@@ -17,4 +17,18 @@ export class NavigationComponent implements OnInit {
   ifAdmin(){
     return this.authenticationService.checkIfAdmin();
   }
+
+  logout() {
+    console.log('Logging out');
+    this.authenticationService.logout();
+  }
+
+  togglemenu:Boolean=false;
+
+  toggleMenu(){
+    if(this.togglemenu===false)
+    this.togglemenu=true;
+    else
+    this.togglemenu=false;
+  }
 }

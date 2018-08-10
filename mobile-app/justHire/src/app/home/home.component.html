@@ -1,21 +1,12 @@
-<div id="wrapper">
+<div class="container">
   <app-navigation></app-navigation>
-
-  <div id="page-wrapper" class="gray-bg">
-
-    <app-topnavbar>
-        <!-- <p-growl [(value)]="msgs"></p-growl> -->
-    </app-topnavbar>
-    
-    <div class="wrapper wrapper-content">
-      <router-outlet></router-outlet>
-    </div>
-
-    <!-- <app-dashboard></app-dashboard> -->
-    <!-- <app-take-interview></app-take-interview> -->
-    <!-- <app-interview-question></app-interview-question> -->
-    <!-- <router-outlet></router-outlet> -->
-
-
-  </div>
+  <!-- <app-topnavbar></app-topnavbar> -->
 </div>
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
+
+<!-- <app-dashboard></app-dashboard> -->
+<!-- <app-take-interview></app-take-interview> -->
+<!-- <app-interview-question></app-interview-question> -->
+<!-- <router-outlet></router-outlet> -->
