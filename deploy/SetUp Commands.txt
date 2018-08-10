@@ -42,4 +42,11 @@ This tutorial is based on the following two articles (and other):
 https://devcenter.heroku.com/articles/deploying-spring-boot-apps-to-heroku
 https://devcenter.heroku.com/articles/connecting-to-relational-databases-on-heroku-with-java
 
+Check database Postgresql:
 
+heroku pg:info
+heroku pg:psql
+
+Check driectory Content:
+
+heroku run bash --app justhire-wissen
