@@ -1,13 +1,15 @@
 Front end hosted :
-Link:
-https://justhire-f934a.firebaseapp.com
+	Link: https://justhire-f934a.firebaseapp.com
 
 
 Backend Hosted {QuestionBank + Resume Not Working }
-Link:
-https://justhire-wissen.herokuapp.com/
+	Link: https://justhire-wissen.herokuapp.com/
+
 
 Mobile app Using Cordova 
+	Reference Link: https://medium.com/@nacojohn/convert-your-angular-project-to-mobile-app-using-cordova-f0384a7711a6
 
-Instruction for Mobile app and Deploy in respective folder
+Deployed using Heroku: 
+	Git Repo: https://git.heroku.com/justhire-wissen.git {Steps in respective folder}
+
 
